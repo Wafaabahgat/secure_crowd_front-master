@@ -16,7 +16,7 @@ const Testing: FC<TestingProps> = () => {
         <h2 className="font-semibold text-3xl py-3">
           Penerration Testing Overview
         </h2>
-        <h5 className="text-xl text-text py-3">
+        <h5 className="text-xl text-text py">
           "Creation is your job, and security is ours."
         </h5>
         <div className="mt-16 flex flex-col items-center justify-center">

@@ -16,7 +16,7 @@ const Testing: FC<TestingProps> = () => {
         <h2 className="font-semibold text-3xl py-3">
           Penerration Testing Overview
         </h2>
-        <h5 className="text-xl text-text py-3">
+        <h5 className="text-xl text-text">
           "Creation is your job, and security is ours."
         </h5>
         <div className="mt-16 flex flex-col items-center justify-center">
@@ -30,7 +30,7 @@ const Testing: FC<TestingProps> = () => {
           <Image src={Frame} alt="" className="mt-[-250px]" />
         </div>
       </div>
-      <div className="grid ml-6 mt-[-30px] gap-2">
+      <div className="grid ml-6 grid-cols-2">
         <div className="flex">
         <Image src={testing1} alt="" width={352} />
         <Image src={Line} alt="" className="h-[1px] mt-16 w-[40px]" />
@@ -38,13 +38,13 @@ const Testing: FC<TestingProps> = () => {
         <Image src={Line} alt="" className="h-[1px] mt-16 w-[40px]" />
         <Image src={testing3} alt="" width={352} />
         </div>
-        <div className="flex">
+        {/* <div> */}
         <Image src={testing1} alt="" width={352} />
         <Image src={Line} alt="" className="h-[1px] mt-16 w-[40px]" />
         <Image src={testing2} alt="" width={352} />
         <Image src={Line} alt="" className="h-[1px] mt-16 w-[40px]" />
         <Image src={testing3} alt="" width={352} />
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );
