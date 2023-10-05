@@ -19,22 +19,19 @@ const Testing: FC<TestingProps> = () => {
         <h5 className="text-xl text-text py-3">
           "Creation is your job, and security is ours."
         </h5>
-
+        
         <div className="mt-16 flex flex-col items-center justify-center">
           <Image
             src={testingI}
             alt=""
             width={650}
             height={446.76}
-            className="mr-20 lg:w-[650px] md:w-[400px] sm:w-[300px]"
-  
+            className="mr-20"
           />
-          <Image src={Frame} alt="" className="lg:mt-[-250px] lg:w-[1203px] md:w-[1200px] md:mt-[-200px] sm:w-[1000px]  sm:mt-[-155px]" />
+          <Image src={Frame} alt="" className="mt-[-250px]" />
         </div>
-
       </div>
-
-      <div className="grid ml-6 mt-[-30px] gap-2 lg:w-[1200px] md:w-[290px] sm:w-[200px] ">
+      <div className="grid ml-6 mt-[-30px] gap-2">
         <div className="flex">
         <Image src={testing1} alt="" width={352} />
         <Image src={Line} alt="" className="h-[1px] mt-16 w-[40px]" />

@@ -34,7 +34,7 @@ const Testing: FC<TestingProps> = () => {
 
       </div>
 
-      <div className="grid ml-6 mt-[-30px] gap-2 lg:w-[1200px] md:w-[290px] sm:w-[200px] ">
+      <div className="grid ml-6 mt-[-30px] gap-2 lg:w-[1200px] md:w-[260px] md:w-[260px]">
         <div className="flex">
         <Image src={testing1} alt="" width={352} />
         <Image src={Line} alt="" className="h-[1px] mt-16 w-[40px]" />
