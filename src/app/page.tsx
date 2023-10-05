@@ -1,0 +1,15 @@
+import Clients from "@/components/home/Clients";
+import Welcome from "@/components/home/Welcome";
+import Testing from "@/components/home/Testing";
+import Overview from "@/components/home/Overview";
+
+export default function Home() {
+  return (
+    <main className="flex gap-5 blur__effect flex-col h-full">
+      <Welcome />
+      <Clients />
+      <Testing />
+      <Overview />
+    </main>
+  );
+}
