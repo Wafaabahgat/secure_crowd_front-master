@@ -10,7 +10,7 @@ const Testing = () => {
       <div className="flex flex-col justify-center items-center">
         <Title ttl="Penerration Testing Overview" />
         <h5 className="text-xl text-text py-2">
-          "Creation is your job, and security is ours."
+          Creation is your job, and security is ours.
         </h5>
         <div className="mt-10 flex mx-auto">
           <Image
