@@ -115,3 +115,16 @@ body {
   background-size: cover;
   background-position: center;
 }
+.arrows::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  height: 120%;
+  background-image: url("../assets/arrows.png");
+  background-position: top right;
+  z-index: -2;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
