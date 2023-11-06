@@ -5,6 +5,7 @@ import Overview from "@/components/home/Overview";
 import Hall from "@/components/home/Hall";
 import Certified from "@/components/home/Certified";
 import Why from "@/components/home/Why";
+import What from "@/components/home/What";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Hall />
       <Certified />
       <Why />
+      <What />
     </main>
   );
 }

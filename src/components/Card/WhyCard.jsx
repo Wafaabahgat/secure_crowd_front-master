@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const WhyCard = () => {
+const WhyCard = ({ ttl, disc, src }) => {
   return (
     <div className="text-center">
       <Image
