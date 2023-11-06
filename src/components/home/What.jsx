@@ -1,9 +1,12 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Title from "../UI/Title";
 import Image from "next/image";
 import avatar from "@/assets/Avatar.png";
 import { CommentCard } from "../Card/CommentCard";
+import activeCircle from "@/assets/svg/icons/activeCircle.svg";
+import circle from "@/assets/svg/icons/circle.svg";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const comments = [
   {
@@ -37,23 +40,22 @@ const comments = [
 ];
 
 const What = () => {
-
   const [current, setcurrent] = useState(1);
 
   const handleNext = () => {
-    if (current < comments.length) {
+    console.log(comments?.length);
+
+    if (comments?.length === current) {
+      setcurrent(1);
+    } else {
       setcurrent(current + 1);
     }
-    if (current === comments.length) {
-      setcurrent(1);
-    }
   };
-  const handleBack = () => {
-    if (current > 1) {
+  const handlePrev = () => {
+    if (imgCurrent > 1) {
       setcurrent(current - 1);
-    }
-    if (current === 1) {
-      setcurrent(4);
+    } else {
+      setcurrent(comments?.length);
     }
   };
 
@@ -67,7 +69,7 @@ const What = () => {
           <div className="text-center relative z-0 rounded-md overflow-hidden p-5 what">
             <div className="flex">
               {comments?.map((e, i) => {
-                return current === e.id ? (
+                return i + 1 === current ? (
                   <CommentCard
                     className="w-max"
                     key={e.id}
@@ -81,6 +83,18 @@ const What = () => {
                 );
               })}
             </div>
+            <button
+              className="absolute  right-10 bottom-5 flex justify-center items-center"
+              onClick={handlePrev}
+            >
+              <FaArrowLeft className="text-2xl text-slate-50 bg-slate-900 rounded-full" />
+            </button>
+            <button
+              className="absolute right-0 bottom-5 flex justify-center items-center"
+              onClick={handleNext}
+            >
+              <FaArrowRight className="text-2xl text-slate-50 bg-slate-900 rounded-full" />
+            </button>
           </div>
         </div>
       </div>
@@ -89,3 +103,4 @@ const What = () => {
 };
 
 export default What;
+// data

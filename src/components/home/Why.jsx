@@ -14,11 +14,11 @@ const Why = () => {
     <div className="w-full py-5 ">
       <div className="lg:mx-[7%] mx-[4%] flex items-center justify-center flex-col">
         <Title ttl="Why Choose Secure Crowd?" />
-        <div className="grid grid-cols-3 mt-4 ">
+        <div className="grid grid-cols-3 mt-4 gap-y-8">
           <WhyCard
             src={first}
             ttl="Proven Expertise"
-            disc="At Secure Crowd, we have a seasoned team of certified penetration testers with a deep understanding of the latest vulnerabilities, exploitation techniques, and countermeasures. Our experience spans across multiple sectors and industries"
+            disc="At Secure Crowd, we have a seasoned team of certified penetration testers with a deep understanding of the latest vulnerabilities, exploitation techniques, and countermeasures. "
           />
           <WhyCard
             src={sec}
