@@ -8,7 +8,7 @@ const Certified = () => {
     <div className="w-full py-5">
       <div className="lg:mx-[7%] mx-[4%] flex items-center justify-center flex-col">
         <Title ttl="Certified Professionals" />
-        <div className="flex mt-10">
+        <div className="flex md:flex-row flex-col justify-center gap-4">
           <div>
             <p className="text-lg line-clamp-2">
               Our highly skilled and experienced team comprises of individuals

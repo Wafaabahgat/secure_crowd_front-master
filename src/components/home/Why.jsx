@@ -14,7 +14,7 @@ const Why = () => {
     <div className="w-full py-5 ">
       <div className="lg:mx-[7%] mx-[4%] flex items-center justify-center flex-col">
         <Title ttl="Why Choose Secure Crowd?" />
-        <div className="grid grid-cols-3 mt-4 gap-y-8">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 mt-4 gap-8">
           <WhyCard
             src={first}
             ttl="Proven Expertise"

@@ -43,8 +43,6 @@ const What = () => {
   const [current, setcurrent] = useState(1);
 
   const handleNext = () => {
-    console.log(comments?.length);
-
     if (comments?.length === current) {
       setcurrent(1);
     } else {
@@ -52,7 +50,7 @@ const What = () => {
     }
   };
   const handlePrev = () => {
-    if (imgCurrent > 1) {
+    if (current > 1) {
       setcurrent(current - 1);
     } else {
       setcurrent(comments?.length);
@@ -83,6 +81,32 @@ const What = () => {
                 );
               })}
             </div>
+            <div className="flex gap-2 items-center justify-center">
+              <Image
+                className="active:scale-90 cursor-pointer"
+                onClick={() => setcurrent(1)}
+                src={current == 1 ? activeCircle : circle}
+                alt=""
+              />
+              <Image
+                className="active:scale-90 cursor-pointer"
+                onClick={() => setcurrent(2)}
+                src={current == 2 ? activeCircle : circle}
+                alt=""
+              />
+              <Image
+                className="active:scale-90 cursor-pointer"
+                onClick={() => setcurrent(3)}
+                src={current == 3 ? activeCircle : circle}
+                alt=""
+              />
+              <Image
+                className="active:scale-90 cursor-pointer"
+                onClick={() => setcurrent(4)}
+                src={current == 4 ? activeCircle : circle}
+                alt=""
+              />
+            </div>
             <button
               className="absolute  right-10 bottom-5 flex justify-center items-center"
               onClick={handlePrev}
@@ -103,4 +127,3 @@ const What = () => {
 };
 
 export default What;
-// data
